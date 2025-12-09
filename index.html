@@ -1,10 +1,60 @@
 <!doctype html>
 <html>
     <head>
+        <!-- CSS -->
         <link rel="stylesheet" href="index.css">
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- Page Title -->
+        <title>PollyGlot - Perfect Translation Every Time</title>
     </head>
     <body>
-        <!-- Your HTML here -->
+        <header>
+            <div class="container">
+                <div class="header-content">
+                    <img src="assets/parrot.png" alt="PollyGlot Logo" class="logo">
+                    <div class="heading-text">
+                        <h1>PollyGlot</h1>
+                        <p>Perfect Translation Every Time</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <form class="translate-form" id="translate-form">
+                    <div class="loader" id="loader">
+                        <label for="input-text">Text to Translate 👇</label>
+                        <textarea name="input" id="input-text" placeholder="Enter text to translate..." required></textarea>
+                    </div>
+                    <fieldset class="language-selection">
+                        <legend>Select Target Language 🌐</legend>
+
+                        <div class="lang-options">
+                            <input type="radio" class="lang-radio" name="language" value="French 🇫🇷" id="lang-fr">
+                            <label for="lang-fr">French 🇫🇷</label>
+                        </div>
+
+                        <div class="lang-options">
+                            <input type="radio" class="lang-radio" name="language" value="Spanish 🇪🇸" id="lang-sp">
+                            <label for="lang-sp">Spanish 🇪🇸</label>
+                        </div>
+
+                        <div class="lang-options">
+                            <input type="radio" class="lang-radio" name="language" value="Japanese 🇯🇵" id="lang-jp">
+                            <label for="lang-jp">Japanese 🇯🇵</label>
+                        </div>
+
+                    </fieldset>
+                    <button type="submit" class="translate-btn" id="translate-btn">Translate</button>
+                </form>
+            </div>
+        </main>
         <script src="index.js" type="module"></script>
     </body>
 </html>

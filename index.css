@@ -1,0 +1,123 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Layout */
+
+.container {
+    padding: 0 2em;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url('assets/worldmap.png');
+    background-size: cover;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0;
+}
+
+/* Form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 2em;
+    padding: 2em 1em;
+    border: 4px solid #252F42;
+    border-radius: 12px;
+}
+.loader {
+    display: flex;
+    flex-direction: column;
+}
+
+.loader label {
+    text-align: center;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    align-self: stretch;
+    height: 150px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #EFF0F4;
+    resize: vertical;
+    font-family: "Poppins", sans-serif;
+    resize: none;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+fieldset input {
+    margin-left: 5em;
+}
+
+legend {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.translate-btn {
+    font-size: 1.5rem;
+    padding: 0.5em 1em;
+    color: #fff;
+    background-color: #035A9D;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold
+}
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+h1 {
+    font-family: "Big Shoulders", sans-serif;
+    color: #32CD32;
+    font-size: 2.75rem;
+}
+
+header p {
+    color: #fff;
+    font-size: 0.75rem;
+}
+
+/* Images */
+
+.logo {
+    height: 5em;
+    margin: 15px;
+}
